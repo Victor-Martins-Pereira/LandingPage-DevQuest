@@ -1,0 +1,122 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--cor-primaria) url(../../images/bg-desktop.svg) center/cover
+    no-repeat;
+  margin: 0 auto;
+}
+
+.container {
+  min-height: 100dvh;
+  display: grid;
+  grid-template-areas:
+    "cabecalho"
+    "principal"
+    "footer";
+  overflow: hidden;
+}
+
+/* cabecalho */
+.cabecalho {
+  grid-area: cabecalho;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem 4rem;
+}
+
+.cabecalho .logo img {
+  margin: 0;
+  width: 14rem;
+}
+
+/* main */
+.container-principal {
+  grid-area: principal;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 2rem 4rem;
+  align-items: center;
+}
+
+.container-principal .ilustracao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container-principal .ilustracao img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container-principal .texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 3rem;
+  color: whitesmoke;
+}
+
+.container-principal .titulo {
+  font-size: 2.4rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.container-principal .texto-principal {
+  font-size: 1rem;
+  margin: 2rem 0;
+  font-weight: 400;
+}
+
+.container-principal .register {
+  font-weight: 400;
+  font-size: 1rem;
+  background-color: white;
+  color: var(--cor-primaria);
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 9rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  transition: 0.3s ease-in-out;
+}
+
+.container-principal .register:hover {
+  background-color: var(--cor-secundaria);
+  background-color: var(--cor-secundaria);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* footer */
+.footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer .social {
+  margin-right: 45px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer .social .fa-brands {
+  font-size: 18px;
+  color: whitesmoke;
+  padding: 10px;
+  border: 1px solid whitesmoke;
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+}
+
+.footer .social .fa-brands:hover {
+  color: var(--cor-secundaria);
+  border: 1px solid var(--cor-secundaria);
+}

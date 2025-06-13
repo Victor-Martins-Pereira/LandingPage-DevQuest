@@ -1,0 +1,54 @@
+@media (max-width: 1024px) {
+  body {
+    background-image: url(../../images/bg-mobile.svg);
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .container {
+    grid-template-areas:
+      "cabecalho"
+      "principal"
+      "footer";
+  }
+
+  .cabecalho .logo img {
+    margin-left: 2rem;
+    width: 10rem;
+  }
+
+  .container-principal {
+    padding: 0.5rem;
+  }
+
+  .container-principal .titulo {
+    font-size: 1.8rem;
+  }
+
+  .ilustracao {
+    margin-bottom: 2rem;
+  }
+
+  .container-principal .register {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .container-principal {
+    grid-template-columns: 1fr;
+    text-align: center;
+
+    .texto {
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+  }
+
+  .footer {
+    justify-content: center;
+
+    .social {
+      margin-right: 0;
+    }
+  }
+}
